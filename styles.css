@@ -1,0 +1,193 @@
+:root{
+    --Branco-principal: #FFFFFF;
+    --cinzasecundario: #c0c0c0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --botao-azul-efeito: #3c92fa;
+    --fonte-principal:'Inter',
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--Branco-principal);
+    font-family: 'Arial', sans-serif;
+    font-family: VAR (--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.principal{
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain ;
+    align-items: center;
+    text-align: center;
+
+}
+
+.container{
+    height: 100vh;
+    background-repeat:no-repeat ; 
+    background-size: contain ;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--Branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.botao__secundario{
+    background-color: var(--transparent);
+    border: 2px solid var(--Branco-principal);/* BOTAO SEM COR NO FUNDO.*/
+    padding: 1em;
+    color: var(--Branco-principal);
+    display: block;
+}
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinzasecundario);
+    margin-top: 1em;
+}
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+.container__img{
+    margin: 1em 0 2em 0;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.container__secundario{
+    background-color: var(--cor-de-fundo);
+    padding: 2em;
+    margin: 2em 6em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.secundario__img{
+    width: 80%;
+}
+.secundario{
+    align-items: center;
+    margin:0 10em;
+}
+.descrição__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--Branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+    color: var(--cinzasecundario);
+}
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao{
+   padding: 2em;
+}
+.descricao__texto_terciario{
+    color: var(--cinzasecundario);
+    display: block;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.container__terciario{
+    background-color: var(--cor-de-fundo);
+    padding: 2em;
+    margin: 2em 6em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.simbolos__img{
+    width: 30%;
+}
+.dispositivos__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--Branco-principal);
+    margin-bottom: 0.1em;
+    text-align: center;
+    align-items: center;
+
+}
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em0;
+}
+.dispositivos{
+    text-align: center;
+    align-items: center;
+}
+.lista__item{
+    font-size: 32px;
+    color: var(--Branco-principal);
+    margin-bottom: 0.1em;
+}
+.rodape{ 
+   text-align: center;
+   align-items: center;
+   display: flex;
+   justify-content: flex-end;
+   text-decoration: none;
+   margin: 0 3em;
+}
+.rodape__img{
+    width: 10%;
+    margin-top: 4em;
+}
+.lista__rodape {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin:5em 0;
+    text-decoration-color: var(--Branco-principal);
+    margin-right: 2em;
+}
+.lista__suporte{
+    font-size: 16px;
+    color: var(--Branco-principal) ;
+    display: block;
+    text-decoration: none; /* Para sair sublinhado */
+    margin-bottom: 0.2em;
+    padding: 1em;
+    text-decoration-line: none;
+    line-height: 50px;
+}
+.texto_rodape{
+    color: var(--cinzasecundario);
+    font-size: 14px;
+    margin: 1em 0;
+    text-align: center;
+    line-height: 50px;
+}
+.lista__suporte a:hover{/* Muda a cor com mouse.*/
+    color: var(--botao-azul);
+}
+.lista__suporte a:active{/* Muda a cor quando clica=para direcionar a 1 link.*/
+    color: purple;
+}
+.container__botao:hover { /* Muda a cor do botão ao passar o mouse */
+    background-color: var(--botao-azul-efeito);
+    color:var(--cor-de-fundo);
+}
